@@ -15,7 +15,7 @@ namespace Warehouse
             Console.WriteLine($"{warehouseName.Name}:");
             foreach(Stock stockItem in Stock)
             {
-                Console.WriteLine($"{stockItem.ItemName.Name}: {stockItem.Amount}");
+                Console.WriteLine($"{stockItem.ItemName.Name}: {stockItem.ItemName.Colour}: {stockItem.Amount}");
             }
         }
     }

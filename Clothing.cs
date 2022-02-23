@@ -1,22 +1,20 @@
 namespace Warehouse
 {
-    class Clothing
+    class Clothing : Item
     {
-        // enum SizeRange
-        // {
-        //     MensSizes,
-        //     LadiesSizes,
-        //     ShoeSizes,
-        // }
-        public string Gender { get; set;}
-        //public string SizeRange { get; set; }
+        public string Section { get; set; }
         public string Category { get; set; }
-        public Clothing(string gender, /*string sizeRange, */string category)
+        public Clothing (string name, string colour, string section, string category) : base (name, colour)
         {
-            Gender = gender;
-            //SizeRange = sizeRange;
+            Section = section;
             Category = category;
         }
         
     }
 }
+// enum SizeRange
+        // {
+        //     MensSizes,
+        //     LadiesSizes,
+        //     ShoeSizes,
+        // }
